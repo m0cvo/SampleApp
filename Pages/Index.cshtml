@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@* This form is used to enable the function created in the IndexModel (Index.cshtml.cs) *@
+<div class="col">
+    <form method="post" asp-page-handler="Register">
+        <p><br />To register please enter your e-mail:</p>
+        <input name="email" />
+        <button>Register</button>
+    </form>
+    <p>@Model.Message</p>
+</div>
+
+
